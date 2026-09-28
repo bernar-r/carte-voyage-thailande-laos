@@ -84,7 +84,7 @@ export class MapService {
     this.containerId = containerId;
     this.map = null;
     this.currentBasemap = 'plan'; // Google Plan par défaut (clair, ultra-net, 0 filigrane)
-    this.is3D = true;
+    this.is3D = false; // Mode 2D à plat par défaut
   }
 
   init(initialCenter = [102.5000, 18.2000], initialZoom = 6.2) {
@@ -93,7 +93,7 @@ export class MapService {
       style: BASEMAPS[this.currentBasemap].style,
       center: initialCenter,
       zoom: initialZoom,
-      pitch: 45,
+      pitch: 0, // Vue à plat 2D par défaut
       bearing: 0,
       maxPitch: 85,
       antialias: true
