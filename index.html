@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🇹🇭 🇱🇦 Thaïlande & Laos 2026 — Expédition 3D Interactive Robin Bernard</title>
+  <meta name="description" content="Récit cartographique 3D interactif et roadbook d'aventure de Robin Bernard en Thaïlande et au Laos (5 au 30 octobre 2026, 24 jours).">
+
+  <!-- MapLibre GL JS v4.7.1 CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+
+  <!-- Google Fonts : Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- VIEWPORT MAPLIBRE 3D -->
+  <div id="map"></div>
+
+  <!-- TOP-BAR FLOTTANTE -->
+  <header class="top-bar">
+    <div class="brand-pill">
+      <div class="brand-flag">🇹🇭</div>
+      <div class="brand-title">
+        Robin Bernard <span class="brand-subtitle">Life OS 2026</span>
+      </div>
+    </div>
+
+    <div class="center-controls">
+      <button id="btn-toggle-story" class="btn-story">
+        ▶ Lancer le Récit
+      </button>
+
+      <div class="filter-pills">
+        <button class="pill-filter active" data-mode="all">Tout</button>
+        <button class="pill-filter" data-mode="moto">🏍️ Moto</button>
+        <button class="pill-filter" data-mode="train">🚄 Train</button>
+        <button class="pill-filter" data-mode="bus">🚌 Bus</button>
+        <button class="pill-filter" data-mode="river">🛶 Eau</button>
+        <button class="pill-filter" data-mode="trek">🥾 Trek</button>
+      </div>
+    </div>
+
+    <div class="basemap-pill-group">
+      <button class="basemap-pill active" data-map="plan">Google Plan</button>
+      <button class="basemap-pill" data-map="satellite">Satellite</button>
+      <button class="basemap-pill" data-map="topo">Relief</button>
+      <button class="basemap-pill" data-map="dark">Ardoise</button>
+    </div>
+  </header>
+
+  <!-- BOUTON RÉ-OUVRIR LA BENTO CARD -->
+  <button id="btn-reopen-card" class="btn-reopen-card">
+    📖 Ouvrir la Fiche Jour
+  </button>
+
+  <!-- BENTO CARD LATÉRALE INTERACTIVE -->
+  <aside id="bento-card" class="bento-card">
+    <div class="card-header">
+      <div class="card-header-top">
+        <div id="card-badge-text" class="card-badge-day">JOUR 1 • MAR 6 OCT</div>
+        <div class="card-header-actions">
+          <button id="btn-close-card" class="btn-icon-round" title="Masquer le volet">✕</button>
+        </div>
+      </div>
+      <h2 id="card-title" class="card-title">Arrivée Bangkok & Yaowarat</h2>
+      <p id="card-subtitle" class="card-subtitle">Chinatown, néons géants et première immersion</p>
+    </div>
+
+    <div class="card-tabs">
+      <button class="card-tab active" data-tab="recit">📖 Récit & Action</button>
+      <button class="card-tab" data-tab="logistique">📍 Logistique & GPS</button>
+    </div>
+
+    <div id="card-body" class="card-body">
+      <!-- Rendu dynamique par BentoUI -->
+    </div>
+  </aside>
+
+  <!-- BOTTOM-BAR : DÉFILEMENT DES JOURS & VUE 2D/3D -->
+  <footer class="bottom-bar">
+    <nav id="timeline-slider" class="timeline-slider-card">
+      <!-- Rendu dynamique par ControlsUI -->
+    </nav>
+
+    <div class="view-controls">
+      <button id="btn-view-2d" class="btn-view-toggle">2D</button>
+      <button id="btn-view-3d" class="btn-view-toggle active">3D Relief</button>
+    </div>
+  </footer>
+
+  <!-- MODULE PRINCIPAL JS -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

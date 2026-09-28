@@ -1,0 +1,148 @@
+/* ============================================================
+   CONTENU DU RÉCIT, LOGISTIQUE ET STREET FOOD (BENTO)
+   ============================================================ */
+/* Bannière photo Unsplash */
+.card-hero-img-wrap {
+  width: 100%;
+  height: 155px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 14px;
+  position: relative;
+  border: 1px solid var(--border-glass);
+}
+
+.card-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-hero-img-wrap:hover .card-hero-img {
+  transform: scale(1.05);
+}
+
+.card-hero-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 12px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+/* Encadré d'or - Highlight */
+.narrative-highlight {
+  background: rgba(245, 158, 11, 0.09);
+  border-left: 3px solid var(--thai-gold);
+  padding: 11px 14px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #fef3c7;
+  font-style: italic;
+}
+
+/* Timeline Matin / Midi / Soir */
+.timeline-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.timeline-text {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+
+/* Badge Gastro / Street Food */
+.gastro-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  margin-top: 6px;
+}
+
+.gastro-icon {
+  font-size: 20px;
+}
+
+.gastro-text {
+  font-size: 12.5px;
+  color: #fecdd3;
+  line-height: 1.4;
+}
+
+/* Boutons d'Action Google Maps */
+.google-maps-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 6px 0;
+}
+
+.btn-gmaps-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-gmaps-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}

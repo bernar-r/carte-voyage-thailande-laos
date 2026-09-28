@@ -1,0 +1,109 @@
+/* ============================================================
+   MARQUEURS 3D, ÉPINGLES ET POPUPS MAPLIBRE
+   ============================================================ */
+.custom-marker-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transform-origin: center bottom;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+
+.custom-marker-wrapper:hover,
+.custom-marker-wrapper.active {
+  transform: scale(1.15) translateY(-4px);
+  z-index: 9999 !important;
+}
+
+.marker-pin {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 15px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.custom-marker-wrapper.active .marker-pin {
+  border-color: #fbbf24;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.85);
+  transform: scale(1.1);
+}
+
+/* Couleurs des Pins selon le mode */
+.marker-moto   { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.marker-train  { background: linear-gradient(135deg, #a855f7, #7e22ce); }
+.marker-bus    { background: linear-gradient(135deg, #f97316, #ea580c); }
+.marker-river  { background: linear-gradient(135deg, #06b6d4, #0284c7); }
+.marker-trek   { background: linear-gradient(135deg, #10b981, #059669); }
+.marker-flight { background: linear-gradient(135deg, #38bdf8, #0284c7); }
+.marker-food   { background: linear-gradient(135deg, #f43f5e, #e11d48); }
+
+/* Badge textuel accolé au pin */
+.marker-text-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #0f172a;
+  border: 1.5px solid rgba(15, 23, 42, 0.18);
+  border-radius: 999px;
+  padding: 3px 10px 3px 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+}
+
+.custom-marker-wrapper:hover .marker-text-badge,
+.custom-marker-wrapper.active .marker-text-badge {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.marker-day-tag {
+  font-size: 10px;
+  font-weight: 900;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.12);
+  padding: 1px 5px;
+  border-radius: 6px;
+  margin-right: 2px;
+}
+
+.custom-marker-wrapper:hover .marker-day-tag,
+.custom-marker-wrapper.active .marker-day-tag {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fbbf24;
+}
+
+/* Popups MapLibre */
+.maplibregl-popup-content {
+  background: rgba(15, 23, 42, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 14px !important;
+  color: #fff !important;
+  padding: 12px 14px !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6) !important;
+  font-family: var(--font-body) !important;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: rgba(15, 23, 42, 0.94) !important;
+}

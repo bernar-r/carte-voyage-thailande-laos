@@ -1,0 +1,43 @@
+/* ============================================================
+   STYLES DE BASE ET LAYOUT DU VIEWPORT
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-void);
+  color: var(--text-white);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Conteneur WebGL MapLibre 3D */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Masquage de l'attribution par défaut pour garder l'UI épurée */
+.maplibregl-ctrl-attrib {
+  background: rgba(15, 23, 42, 0.7) !important;
+  color: var(--text-sub) !important;
+  font-size: 10px !important;
+  border-radius: var(--radius-sm) !important;
+  margin: 0 10px 10px 0 !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: var(--text-muted) !important;
+}

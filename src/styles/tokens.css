@@ -1,0 +1,52 @@
+/* ============================================================
+   DESIGN TOKENS : PALETTE 'DEEP KARST' & TYPOGRAPHIE
+   ============================================================ */
+:root {
+  /* Surfaces & fonds sombres */
+  --bg-void: #07090e;
+  --bg-surface: rgba(13, 18, 30, 0.85);
+  --bg-surface-elevated: rgba(23, 32, 54, 0.95);
+  --bg-glass-card: rgba(15, 23, 42, 0.88);
+  --bg-pill: rgba(255, 255, 255, 0.08);
+  --bg-pill-hover: rgba(255, 255, 255, 0.16);
+
+  /* Bordures translucides */
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --border-glass-bright: rgba(255, 255, 255, 0.25);
+
+  /* Typographie & Couleurs de texte */
+  --text-white: #f8fafc;
+  --text-dim: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-sub: #64748b;
+
+  /* Palette Identité Thaïlande & Laos */
+  --thai-gold: #f59e0b;
+  --thai-gold-glow: rgba(245, 158, 11, 0.45);
+  --karst-emerald: #10b981;
+  --karst-glow: rgba(16, 185, 129, 0.35);
+  --mekong-cyan: #06b6d4;
+  --mekong-glow: rgba(6, 182, 212, 0.4);
+  --rail-purple: #a855f7;
+  --rail-glow: rgba(168, 85, 247, 0.4);
+  --bus-amber: #f97316;
+  --bus-glow: rgba(249, 115, 22, 0.45);
+  --flight-blue: #38bdf8;
+  --flight-glow: rgba(56, 189, 248, 0.4);
+  --neon-pink: #f43f5e;
+  --neon-glow: rgba(244, 63, 94, 0.4);
+
+  /* Polices */
+  --font-title: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Rayons de courbure */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+
+  /* Ombres portées */
+  --shadow-elevation: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 0 0 1px 1px rgba(255, 255, 255, 0.1) inset;
+  --shadow-glow: 0 0 25px var(--thai-gold-glow);
+}

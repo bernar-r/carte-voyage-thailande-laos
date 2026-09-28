@@ -1,0 +1,50 @@
+name: Deploiement Carte Interactive 3D
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperation du code
+        uses: actions/checkout@v4
+
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Compilation Vite de la Carte 3D
+        run: |
+          npx vite build
+
+      - name: Configuration GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Televersement de l'artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploiement sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
