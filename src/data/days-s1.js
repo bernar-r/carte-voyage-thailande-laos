@@ -5,7 +5,7 @@ export const daysS1 = {
   "0": {
     meta: {
       dayNum: 0, date: "Lun 5 oct", title: "Genève ➔ En vol (Qatar Airways)",
-      subtitle: "Départ Ferney-Voltaire, vol QR 102 via Doha",
+      subtitle: "Départ Genève, vol QR 102 via Doha",
       icon: "🛫", dist: "Aérien ~9 200 km", tags: ["flight"],
       camera: { center: [6.1432, 46.2044], zoom: 4.5, pitch: 40, bearing: 0 },
       sleep: "Nuit en vol (Qatar Airways)",
@@ -20,10 +20,10 @@ export const daysS1 = {
       logistics: {
         dist: "Genève ➔ Doha ➔ Bangkok", driveTime: "Escale Doha : 2h35",
         gps: [
-          { name: "Vol QR 102 GVA ➔ DOH", tel: "Réf 9RU6UD", code: "09:25 ➔ 16:30" },
-          { name: "Vol QR 838 DOH ➔ BKK", tel: "Réf 9RU6UD", code: "19:05 ➔ 06:20" }
+          { name: "Vol QR 102 GVA ➔ DOH", tel: "Qatar Airways", code: "09:25 ➔ 16:30" },
+          { name: "Vol QR 838 DOH ➔ BKK", tel: "Qatar Airways", code: "19:05 ➔ 06:20" }
         ],
-        planB: "Voiture sécurisée garage Ferney-Voltaire (85 €). Tous papiers imprimés en double."
+        planB: "Tous papiers imprimés en double."
       }
     },
     coords: [100.7501, 13.6900]

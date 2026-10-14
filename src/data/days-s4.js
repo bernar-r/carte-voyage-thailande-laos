@@ -196,14 +196,13 @@ export const daysS4 = {
         highlight: "Fin d'une épopée exceptionnelle de 24 jours à travers le Laos et la Thaïlande. Atterrissage à Genève le cœur comblé.",
         morning: "Taxi court vers l'aéroport international de Chiang Mai (CNX). Décollage vol Etihad EY 427 à 09:10.",
         afternoon: "Escale internationale à Abou Dabi, correspondance sur le vol EY 145 vers Genève.",
-        evening: "Nuit dans les airs. Atterrissage vendredi 30 octobre à 06:45 à Genève (GVA). Récupération voiture Ferney-Voltaire et retour maison.",
+        evening: "Nuit dans les airs. Atterrissage vendredi 30 octobre à 06:45 à Genève (GVA). Retour maison.",
         gastro: "Repas servis à bord sur les vols Etihad Airways."
       },
       logistics: {
         dist: "Vol CNX ➔ AUH ➔ GVA", driveTime: "Départ 09:10, arrivée GVA le 30 à 06:45",
         gps: [
-          { name: "Aéroport Chiang Mai", tel: "Vol EY 427 à 09:10", code: "18.7677, 98.9625" },
-          { name: "Garage Ferney-Voltaire", tel: "Clés prêtes", code: "46.2570, 6.1110" }
+          { name: "Aéroport Chiang Mai", tel: "Vol EY 427 à 09:10", code: "18.7677, 98.9625" }
         ],
         planB: "Billet réservé et payé (7 205 THB). Sac Forclaz pesé sous les 7 kg cabine."
       }
