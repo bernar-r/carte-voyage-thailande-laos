@@ -20,7 +20,7 @@ export const daysS2 = {
       logistics: {
         dist: "Bus Route 13 Sud ~350 km", driveTime: "Bus Vientiane ➔ Thakhek : 6h",
         gps: [
-          { name: "Pont Amitié I", tel: "eVisa NEQ6K30", code: "17.8783, 102.7420" },
+          { name: "Pont Amitié I", tel: "Poste frontière (eVisa)", code: "17.8783, 102.7420" },
           { name: "Wang Wang Motorbike", tel: "Caution liquide (zéro passeport)", code: "17.4042, 104.8306" }
         ],
         planB: "Scooter semi-auto Honda Wave 125cc si les 6h de bus ont été fatigantes."

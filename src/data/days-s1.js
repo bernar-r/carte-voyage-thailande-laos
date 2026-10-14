@@ -12,7 +12,7 @@ export const daysS1 = {
       narrative: {
         photo: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
         highlight: "Décollage de Genève à 09:25. Cap sur l'Asie du Sud-Est pour 24 jours d'aventure pure.",
-        morning: "Départ à 06:00 de Saint-Priest, dépôt de la voiture au garage fermé de Ferney-Voltaire. Navette aéroport GVA.",
+        morning: "Départ à 06:00 vers Genève, navette aéroport GVA.",
         afternoon: "Vol Qatar Airways QR 102 vers Doha (arrivée 16:30 locale, escale 2h35).",
         evening: "Vol QR 838 à 19:05 vers Bangkok Suvarnabhumi. Hydratation et sommeil à bord.",
         gastro: "Plateaux repas internationaux à bord du Boeing 777."
@@ -86,13 +86,13 @@ export const daysS1 = {
       subtitle: "Passerelles suspendues à vélo sans garde-corps & train de nuit",
       icon: "🚆", dist: "Vélo mangrove + Train SRT", tags: ["train"],
       camera: { center: [100.5404, 13.8040], zoom: 12.2, pitch: 55, bearing: 20 },
-      sleep: "Train n°25 SRT (Voiture 4, Couchette haute 17)",
+      sleep: "Train de nuit n°25 SRT (couchette)",
       narrative: {
         photo: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=800&q=80",
         highlight: "Rouler à vélo sur les pistes de béton surélevées à 1,50 m au-dessus des marécages tropicaux de Bang Krachao, sans aucune barrière.",
         morning: "Traversée en barque vers Bang Krachao. Location vélo et adrénaline sur les passerelles suspendues entre cocotiers et varans.",
         afternoon: "Retour Chinatown, récupération des sacs au Luk Hostel. Métro direct vers la gare centrale Krung Thep Aphiwat.",
-        evening: "Départ à 20:25 du Train n°25 Special Express CNR. Couchette haute 17 préparée, bercé par le roulement des bogies.",
+        evening: "Départ à 20:25 du Train n°25 Special Express CNR. Couchette préparée, bercé par le roulement des bogies.",
         gastro: "Pad Krapao Moo fumant et fruits frais achetés avant de monter dans le train."
       },
       logistics: {
